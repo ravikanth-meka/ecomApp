@@ -26,10 +26,17 @@ import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
 
 import { AppComponent } from './app.component';
+import { PurchaseOrderComponent } from './purchase-order/purchase-order.component';
+import { TestCarsComponent } from './test-cars/test-cars.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        PurchaseOrderComponent,
+        TestCarsComponent,
+        ProductsComponent
     ],
     imports: [
         BrowserModule,
@@ -40,6 +47,7 @@ import { AppComponent } from './app.component';
         InputTextModule,
         DialogModule,
         ButtonModule
+        ,        AppRoutingModule
     ],
     providers: [],
     bootstrap: [AppComponent]
